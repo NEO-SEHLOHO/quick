@@ -146,7 +146,7 @@ button { font: inherit; }
   padding: 12px 20px;
   color: var(--muted);
   font-size: 13px;
-  text-align: right;
+  text-align: center;
 }
 .footer p { margin: 0; }
 @media (max-width: 640px) {

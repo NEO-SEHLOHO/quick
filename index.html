@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Links</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo1.JPG" alt="CUT logo" class="logo" />
+      <h1>Quick Links</h1>
+    </div>
+    <button id="addBtn" class="primary">Add Link</button>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Links</h2>
+        <input id="search" type="search" placeholder="Search…" />
+      </div>
+      <div id="linkList" class="grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Favorites</h2>
+      <div id="favList" class="grid grid-tight"></div>
+    </section>
+  </main>
+
+  <dialog id="linkDialog">
+    <form id="linkForm" method="dialog">
+      <h3>Add Link</h3>
+      <label>Title <input id="title" required /></label>
+      <label>URL <input id="url" type="url" placeholder="https://…" required /></label>
+      <label>Category <input id="category" /></label>
+      <div class="actions">
+        <button type="button" id="cancel">Cancel</button>
+        <button class="primary" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <template id="cardTpl">
+    <article class="card">
+      <div class="card-text">
+        <p class="tag"></p>
+        <h3 class="title"></h3>
+        <a class="link" target="_blank" rel="noopener">Open</a>
+      </div>
+      <button class="fav" title="Toggle favorite">★</button>
+    </article>
+  </template>
+
+  <footer class="footer">
+    <p>Developed by NEO SEHLOHO - 067 770 6255 - your partner in web and app solution</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
